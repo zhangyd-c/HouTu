@@ -1,0 +1,25 @@
+<#include "/src/main/resources/template/macro.include"/>
+<#assign className = table.className>   
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="${mapperPackage}.${table.className}Mapper">
+	<resultMap id="rm" type="${beansPackage}.${table.className}">
+		<#list table.columns as column>
+		<result property="${column.columnNameFirstLower}" jdbcType="${column.jdbcType}" column="${column.columnName}"/>
+		</#list>
+	</resultMap>
+
+	<select id="findPageBreakByCondition" parameterType="${basePackage}.biz.vo.${table.className}ConditionVO" resultMap="rm">
+		SELECT
+			<#list table.columns as _column>
+			t.${_column.columnName}<#if _column_has_next>,</#if>
+			</#list>
+		FROM
+			${table.tableName} t
+		WHERE
+			1 = 1
+		ORDER BY t.insert_time DESC
+	</select>
+</mapper>
+
