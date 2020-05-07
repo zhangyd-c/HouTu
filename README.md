@@ -23,7 +23,7 @@
 	</a>
 </p>
 
-### 特点
+## 特点
 
 1. 原理简单：`HouTu`以原生`MySQL`语句为基础，获取如数据库列表、表详情和列详情等信息，结合`Freemarker`模板生成`Java`代码。
 2. 可定制模板：`HouTu`集成`Freemarker`模板，只要是遵循`Freemarker`开发的模板都可以自动生成对应的`Java`代码。
@@ -199,6 +199,14 @@ g.generate("sys_user");
 - `spring-boot-demo` 深度学习并实战 spring boot 的项目: [https://github.com/xkcoding/spring-boot-demo](https://github.com/xkcoding/spring-boot-demo)
 - `mica` SpringBoot 微服务高效开发工具集: [https://github.com/lets-mica/mica](https://github.com/lets-mica/mica)
 
+## 关于 HouTu
+
+其实本项目是重构于我15年开源的一款代码生成工具：https://github.com/zhangyd-c/generation，当时还是在用的SpringMVC。开源后就一直没怎么维护，最近要开新项目，正好抽时间就重写了一遍。
+
+当时写了两篇关于实现[generation](https://github.com/zhangyd-c/generation)原理的文章：
+- [【干货】自己动手打造专属代码生成工具（一）](https://843977358.iteye.com/admin/blogs/2265418)
+- [【干货】自己动手打造专属代码生成工具（完结篇）](https://843977358.iteye.com/admin/blogs/2265419)
+ 
 ## 参与贡献
 
 1. fork本项目到自己的repo
