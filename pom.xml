@@ -52,7 +52,7 @@
         <maven.gpg-version>1.6</maven.gpg-version>
         <jacoco.version>0.8.2</jacoco.version>
         <hutool.version>5.3.2</hutool.version>
-        <fastjson.version>1.2.62</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <guava.version>RELEASE</guava.version>
         <freemarker.version>2.3.30</freemarker.version>
         <mysql.version>8.0.19</mysql.version>
